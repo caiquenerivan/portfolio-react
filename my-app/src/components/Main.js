@@ -6,8 +6,9 @@ import linkedin from '../imgs/linkedin-240.png';
 import github from '../imgs/github-384.png';
 import instagram from '../imgs/instagram-384.png';
 import artstation from '../imgs/artstation.svg';
+import button from '../imgs/button.svg';
 
-export default function Main() {
+export default function Main({...props}) {
 
 
     return (
@@ -18,11 +19,11 @@ export default function Main() {
                 </div>
                 <div className="menu">
                     <ul>
-                        <li>Home</li>
-                        <li>Skills</li>
-                        <li>Portfolio</li>
-                        <li>Sobre</li>
-                        <li>Contato</li>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>Skills</a></li>
+                        <li><a href='#'>Portfolio</a></li>
+                        <li><a href='#'>Sobre</a></li>
+                        <li><a href='#'>Contato</a></li>
                     </ul>
                 </div>
                 <div id="social-media">
@@ -37,6 +38,10 @@ export default function Main() {
             </div>
             <div className="principal">
                 <h1>CAIQUE <br/>NERIVAN</h1>
+                <h2>FRONT-END DEVELOPER</h2>
+                <div id="botao">
+                    <img src={button} alt="botão"/>
+                </div>
             </div>
         </div>
     );

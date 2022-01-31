@@ -1,0 +1,28 @@
+#skills{
+    height: 35em;
+    margin: 0;
+    background-color: #21282D;
+    color: rgba($color: #EDE9E9, $alpha: 0.8);
+    padding: 7em;
+
+    h1{
+        margin: 0;
+    }
+
+    .carousel{
+        
+        padding: 2em;
+        
+
+        .slider{
+            position: relative;
+            color: black;
+            display: flex;
+            justify-content: space-around;  
+        }
+
+        .slick-dots li.slick-active button:before {
+            color:#DB8080 !important;
+        }
+    }
+}
