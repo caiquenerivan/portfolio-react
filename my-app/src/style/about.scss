@@ -1,0 +1,55 @@
+#about{
+    background-color: rgba($color: #21282D, $alpha: 0.86);
+    padding: 5em;
+ 
+
+
+}
+
+.sobre{
+    color: rgba($color: #EDE9E9, $alpha: 0.80);
+    
+    h1{
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    p{
+        text-align: justify;
+        width: 25em;
+    }
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8em;
+        margin: 5em 0;
+
+        img{
+            border-radius: 50%;
+            height: 24em;
+            margin: .5em;
+        }
+    }
+}
+
+#contato{
+    background-color: #5E6777;
+    margin: 0;
+    padding: 5em 12em;
+
+    .dados{
+        display: flex;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: rgba($color: #EDE9E9, $alpha: 0.80);
+            margin: 0;
+            padding: 0;
+
+            &:hover{
+                color: #FF4444;
+            }
+        }
+    }
+
+}

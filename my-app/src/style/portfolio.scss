@@ -1,0 +1,59 @@
+#portfolio{
+    padding: 3em 0;
+    margin: 0;
+    color: rgba($color: #EDE9E9, $alpha: 0.8);
+    background-color: #FF4444;
+
+    h1, h2{
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .impar{
+        display: flex;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        height: 30em;
+        text-align: left;
+        margin: 7em 0;
+
+        .bloco{
+            margin: 0 10em;
+        }
+        
+        .imagem{
+
+            margin: 0;
+            
+            img{
+                border-radius: 10px;
+                height: 30em;
+            }
+        }
+    }
+    .par{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        height: 30em;
+        text-align: right;
+        margin: 7em 0;
+
+        .bloco{
+            margin: 0 10em;
+        }
+        
+        .imagem{
+
+            margin: 0;
+            
+            img{
+                border-radius: 10px;
+                height: 30em;
+            }
+        }
+    }
+
+
+}

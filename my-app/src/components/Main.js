@@ -28,11 +28,35 @@ export default function Main({...props}) {
                 </div>
                 <div id="social-media">
                     <ul>
-                        <li><img src={linkedin} alt="linkedin"/></li>
-                        <li><img src={github} alt="github"/></li>
-                        <li><img src={behance} alt="behance"/></li>
-                        <li><img src={instagram} alt="instagram"/></li>
-                        <li><img src={artstation} alt="artstation"/></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/caiquenerivan/" target="_blank">
+                                <img src={linkedin} alt="linkedin"/>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/caiquenerivan" target="_blank">
+                                <img src={github} alt="github"/>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.behance.net/caiquenerivan" target="_blank">
+                                <img src={behance} alt="behance"/>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.instagram.com/craquenerivan/" target="_blank">
+                                <img src={instagram} alt="instagram"/>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.artstation.com/caiquenerivan" target="_blank">
+                                <img src={artstation} alt="artstation"/>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
