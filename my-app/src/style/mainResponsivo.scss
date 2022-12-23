@@ -1,0 +1,174 @@
+$screen-sm: 500px;
+$screen-md: 764px;
+$screen-bg: 1200px;
+
+$bg-nav: #21282D;
+$primary-color: #FF9696;
+$text: #F5F2F2;
+
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: $bg-nav;
+    z-index: 1000;
+    max-width: 2000px;
+
+    .title {
+        padding: 1em;
+    }
+
+
+    @media screen and (min-width: $screen-bg) {
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    button {
+
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        height: 2em;
+        padding-top: .5em;
+
+        img{
+            height: 3em;
+        }
+
+        @media screen and (min-width: $screen-bg) {
+            display: none;
+        }
+    }
+
+
+    .nav-container {
+        position: fixed;
+        background-color: $bg-nav;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+        width: 80%;
+        height: 70vh;
+
+        left: 100%;
+        transition: 0.3s;
+
+        &.active {
+            left: 20%;
+
+            @media screen and (min-width: $screen-md){
+                left: 50%;
+            }
+
+        }
+
+        @media screen and (min-width: $screen-md){
+            width: 50%;
+        }
+
+        @media screen and (min-width: $screen-bg) {
+            left: 0;
+            flex-direction: row;
+            position: relative;
+            height: 100%;
+            margin: 0;
+            justify-content: space-between;
+            padding: 0 2em;
+            margin-left: 2em;
+            width: 80%;
+
+            &.active {
+                left: 0;
+    
+            }
+            
+
+
+            .menu ul {
+                display: flex;
+                flex-direction: row;
+                height: 3em;
+                gap: 1em;
+            }
+        }
+
+
+
+
+        #social-media ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 1.5em;
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    img {
+        height: 1.2em;
+    }
+
+    a {
+        text-decoration: none;
+        color: $text;
+        font-size: 2em;
+
+        &:hover {
+            color: $primary-color;
+
+        }
+    }
+
+
+}
+
+.principal {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba($color: #21282D, $alpha: 0.86);
+    color: $text;
+
+    @media screen and (min-width: $screen-bg) {
+        padding-left: 5em;
+    }
+
+    h1 {
+        font-size: 3em;
+
+        @media screen and (min-width: $screen-bg) {
+            text-align: left;
+
+        }
+
+        @media screen and (min-width: $screen-md) {
+            font-size: 6em;
+            margin: 0;
+
+        }
+    }
+
+    h2 {
+        color: $primary-color;
+        font-weight: 450;
+
+        @media screen and (min-width: $screen-bg) {
+            text-align: left;
+            font-size: 3em;
+        }
+
+        @media screen and (min-width: $screen-md) {
+            font-size: 3em;
+        }
+    }
+
+}

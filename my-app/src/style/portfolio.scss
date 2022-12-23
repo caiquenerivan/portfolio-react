@@ -1,59 +1,167 @@
-#portfolio{
+$breakpoint-phone: 768px;
+$breakpoint-tablet: 1024px;
+
+#portfolio {
     padding: 3em 0;
     margin: 0;
     color: rgba($color: #EDE9E9, $alpha: 0.8);
     background-color: #FF4444;
 
-    h1, h2{
-        font-weight: 400;
-        text-transform: uppercase;
+    @media screen and (max-width: $breakpoint-phone) {
+        padding: 10em 0;
+        width: 100vh;
     }
 
-    .impar{
+    h1,
+    h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+
+    }
+
+    h2{
+        color: #21282D;
+    }
+
+
+
+    .impar {
         display: flex;
         justify-content: space-between;
-        grid-template-columns: 1fr 1fr;
         height: 30em;
         text-align: left;
         margin: 7em 0;
 
-        .bloco{
-            margin: 0 10em;
+        @media screen and (max-width: $breakpoint-phone) {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10em;
         }
-        
-        .imagem{
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin: 0;
+        }
+
+        div.bloco {
+            margin: 0 10em;
+
+            @media screen and (max-width: $breakpoint-tablet) {
+                margin: 0;
+            }
+
+            @media screen and (max-width: $breakpoint-phone) {
+                margin: 0;
+            }
+        }
+
+        .descricao {
+            @media screen and (max-width: $breakpoint-tablet) {
+                margin: 0 2em;
+            }
+
+            @media screen and (max-width: $breakpoint-phone) {
+                text-align: center;
+            }
+        }
+
+        .imagem {
 
             margin: 0;
-            
-            img{
+
+            img {
                 border-radius: 10px;
                 height: 30em;
+
+                @media screen and (max-width: $breakpoint-tablet) {
+                    margin: 0;
+                    margin-top: 4em;
+                    height: 20em;
+                }
+
+                @media screen and (max-width: $breakpoint-phone) {
+                    
+                }
             }
         }
     }
-    .par{
+
+    .par {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        grid-template-columns: 1fr 1fr;
         height: 30em;
         text-align: right;
         margin: 7em 0;
 
-        .bloco{
-            margin: 0 10em;
+
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin: 0;
         }
-        
-        .imagem{
+
+        @media screen and (max-width: $breakpoint-phone) {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10em;
+        }
+
+        div.bloco {
+            margin: 0 10em;
+
+            @media screen and (max-width: $breakpoint-tablet) {
+                margin: 0;
+            }
+
+            @media screen and (max-width: $breakpoint-phone) {
+                margin-bottom: 2em;
+
+            }
+        }
+
+        .descricao {
+            @media screen and (max-width: $breakpoint-tablet) {
+                margin: 0 2em;
+            }
+
+            @media screen and (max-width: $breakpoint-phone) {
+                text-align: center;
+                margin-bottom: 5em;
+            }
+        }
+
+        .imagem {
 
             margin: 0;
-            
-            img{
+
+            img {
                 border-radius: 10px;
                 height: 30em;
+
+                @media screen and (max-width: $breakpoint-tablet) {
+                    margin: 0;
+                    margin-top: 4em;
+                    height: 20em;
+                }
+
+                @media screen and (max-width: $breakpoint-phone) {
+                    margin: 0;
+                }
             }
         }
     }
 
+    a {
+        text-decoration: none;
+        color: rgba($color: #EDE9E9, $alpha: 0.8);
+    }
+
+    a:hover {
+        color: #21282D;
+        font-size: 1.1em;
+    }
 
 }

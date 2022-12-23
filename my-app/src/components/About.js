@@ -32,11 +32,11 @@ export default function About() {
                     </div>
                     <div className="dados">
                         <p>LinkedIn:</p>
-                        <a href="https://www.linkedin.com/in/caiquenerivan/">https://www.linkedin.com/in/caiquenerivan/</a>
+                        <a href="https://www.linkedin.com/in/caiquenerivan/">Meu LinkedIn</a>
                     </div>
                     <div className="dados">
                         <p>GitHub:</p>
-                        <a href="https://github.com/caiquenerivan">https://github.com/caiquenerivan</a>
+                        <a href="https://github.com/caiquenerivan">Meu github</a>
                     </div>
                 </div>
             </div>

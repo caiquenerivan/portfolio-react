@@ -1,6 +1,8 @@
 import React from 'react';
-import '../style/portfolio.scss';
+import '../style/portfolioResponsivo.scss';
 import dashboard from '../imgs/dashboard.png';
+import jogoVelha from '../imgs/site-jogo-da-velha.png';
+import caiqueEdicao from '../imgs/caiqueEdicao.png';
 
 
 export default function Portfolio() {
@@ -10,30 +12,54 @@ export default function Portfolio() {
         <div id="portfolio">
             <h1>Portfolio</h1>
             <div className="container impar">
-                <div className="descricao bloco">
-                    <h2>PROJETO 1</h2>
-                    <p>Qui non dolore fugiat reprehenderit ut nulla dolore non et dolor. Culpa ad in quis culpa dolore id culpa. Fugiat aliqua proident velit enim excepteur occaecat exercitation deserunt excepteur dolore. Est amet duis incididunt sint sint exercitation cillum commodo adipisicing elit. Mollit sit irure exercitation elit aute. Id ex qui consectetur in laboris adipisicing sunt aliquip officia. Do enim aliquip duis nostrud irure elit velit ullamco nisi commodo ea. Cupidatat magna laboris ut pariatur dolore excepteur deserunt commodo cupidatat cupidatat sint. Excepteur cillum proident consequat et nisi officia magna duis. Excepteur commodo nulla veniam culpa incididunt velit sint ipsum.</p>
+                <div className="descricao">
+                    <h2>Jogo da Velha</h2>
+                    <p>Criação de um jogo da velha para ser jogado entre duas pessoas.</p>
+                    <p>O Site foi feito com HTML5/CSS3 para criação e estilização da página e vanilla javascript para criar as regras do jogo. </p>
+                    <p>Na parte HTML5 Foi criada um h1 contendo o título, uma div com nove botões e um h2 sem texto, no CSS foi estilizado centralizando os elementos e colocando as cores e fonte corretas.</p>
+                    <p>No javascript criei as regras do jogo e a checagem de quem ganhou ou se houve empate. </p>
+                    <p>
+                        <a href="https://jogodavelhacn.web.app/" target="_blank">
+                            Acesse aqui.
+                        </a>
+                    </p>
                 </div>
-                <div className="imagem bloco">
-                    <img src={dashboard} alt="foto do projeto 1"/>
+                <div className="imagem">
+                    <img src={jogoVelha} alt="foto do projeto 1" />
                 </div>
             </div>
             <div className="container par">
-                <div className="descricao bloco">
-                    <h2>PROJETO 2</h2>
-                    <p>Qui non dolore fugiat reprehenderit ut nulla dolore non et dolor. Culpa ad in quis culpa dolore id culpa. Fugiat aliqua proident velit enim excepteur occaecat exercitation deserunt excepteur dolore. Est amet duis incididunt sint sint exercitation cillum commodo adipisicing elit. Mollit sit irure exercitation elit aute. Id ex qui consectetur in laboris adipisicing sunt aliquip officia. Do enim aliquip duis nostrud irure elit velit ullamco nisi commodo ea. Cupidatat magna laboris ut pariatur dolore excepteur deserunt commodo cupidatat cupidatat sint. Excepteur cillum proident consequat et nisi officia magna duis. Excepteur commodo nulla veniam culpa incididunt velit sint ipsum.</p>
+                <div className="descricao">
+                    <h2>Portfolio de Edição de vídeo</h2>
+                    <p>Criação de um jogo da velha para ser jogado entre duas pessoas.</p>
+                    <p>O Site foi feito com HTML5/CSS3 para criação e estilização da página e vanilla javascript para criar as regras do jogo. </p>
+                    <p>Na parte HTML5 Foi criada um h1 contendo o título, uma div com nove botões e um h2 sem texto, no CSS foi estilizado centralizando os elementos e colocando as cores e fonte corretas.</p>
+                    <p>No javascript criei as regras do jogo e a checagem de quem ganhou ou se houve empate. </p>
+                    <p>
+                        <a href="https://caiqueedicao.web.app/" target="_blank">
+                            Acesse aqui.
+                        </a>
+                    </p>
                 </div>
-                <div className="imagem bloco">
-                    <img src={dashboard} alt="foto do projeto 1"/>
+                <div className="imagem">
+                    <img src={caiqueEdicao} alt="foto do meu portfolio de edição" />
                 </div>
             </div>
             <div className="container impar">
-                <div className="descricao bloco">
-                    <h2>PROJETO 3</h2>
-                    <p>Qui non dolore fugiat reprehenderit ut nulla dolore non et dolor. Culpa ad in quis culpa dolore id culpa. Fugiat aliqua proident velit enim excepteur occaecat exercitation deserunt excepteur dolore. Est amet duis incididunt sint sint exercitation cillum commodo adipisicing elit. Mollit sit irure exercitation elit aute. Id ex qui consectetur in laboris adipisicing sunt aliquip officia. Do enim aliquip duis nostrud irure elit velit ullamco nisi commodo ea. Cupidatat magna laboris ut pariatur dolore excepteur deserunt commodo cupidatat cupidatat sint. Excepteur cillum proident consequat et nisi officia magna duis. Excepteur commodo nulla veniam culpa incididunt velit sint ipsum.</p>
+                <div className="descricao">
+                    <h2>Portfolio de Edição de vídeo</h2>
+                    <p>Criação de um jogo da velha para ser jogado entre duas pessoas.</p>
+                    <p>O Site foi feito com HTML5/CSS3 para criação e estilização da página e vanilla javascript para criar as regras do jogo. </p>
+                    <p>Na parte HTML5 Foi criada um h1 contendo o título, uma div com nove botões e um h2 sem texto, no CSS foi estilizado centralizando os elementos e colocando as cores e fonte corretas.</p>
+                    <p>No javascript criei as regras do jogo e a checagem de quem ganhou ou se houve empate. </p>
+                    <p>
+                        <a href="https://jogodavelhacn.web.app/" target="_blank">
+                            Acesse aqui.
+                        </a>
+                    </p>
                 </div>
-                <div className="imagem bloco">
-                    <img src={dashboard} alt="foto do projeto 1"/>
+                <div className="imagem">
+                    <img src={dashboard} alt="foto do projeto 1" />
                 </div>
             </div>
         </div>

@@ -2,107 +2,137 @@ $base-color: #21282D;
 $second-color: #FF9696;
 $third-color: #F5F2F2;
 
-.navbar{
-    background-color: $base-color;
+$breakpoint-phone: 768px;
+$breakpoint-tablet: 1024px;
 
-    height: 4em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 6em;
-    margin: 0;
+.mainSession {
 
-    .title{
-        margin-right: 15em;
-    }
-    
-    img{
-
-        height: 1.5em;
-
-    }
-
-    ul, li{
-        list-style-type: none;
-        font-size: 1.1em;
-    }
-
-    ul{
+    .navbar {
+        background-color: $base-color;
+        height: 4em;
         display: flex;
         justify-content: space-between;
-    }
-
-    li{
-        margin: 0 .7em;
-
-        a{
-            text-decoration: none;
-            color: $third-color;
-        }
-    }
-
-    #social-media{
-        li{
-
-            padding: 0 1;
-        }
-    }
-}
-
-.principal{
-    background-color: rgba($color: #21282D, $alpha: 0.86);
-    height: 80vh;
-    padding-left: 6em;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
-    h1{
+        align-items: center;
+        padding: 0 6em;
         margin: 0;
-        color: $third-color;
-        font-size: 90px;
-        font-weight: 500;
-    }
 
-    h2{
-        color: $second-color;
-        font-weight: 400;
-        font-size: 30px;
-    }
+        @media screen and (max-width: $breakpoint-tablet) {
+            padding: 0;
+        }
 
-    #botao{
-        position: relative;
-        border: solid 3px $third-color;
-        border-radius: 20px;
-        height: 4em;
-        width: 1.5em;
-        padding: 1em;
-        cursor: pointer;
+        .title {
+            margin-right: 15em;
 
-        
+            @media screen and (max-width: $breakpoint-tablet) {
+                margin: 0;
+                margin-left: 6em;;
+            }
+        }
 
-        img{
-            position: absolute;
+        img {
+
             height: 1.5em;
 
-            &:hover{
-                -webkit-animation: go-back 1s infinite alternate;
-                -moz-animation: go-back 1s infinite alternate;
-                animation: go-back 1s infinite alternate;   
+        }
 
+        ul,
+        li {
+            list-style-type: none;
+            font-size: 1.1em;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            margin: 0 .7em;
+
+            a {
+                text-decoration: none;
+                color: $third-color;
+            }
+        }
+
+        #social-media {
+            li {
+                padding: 0 1px;
+            }
+
+            @media screen and (max-width: $breakpoint-tablet) {
+                padding: 0;
+                margin-right: 6em;
             }
         }
     }
 
-}
+    .principal {
+        background-color: rgba($color: #21282D, $alpha: 0.86);
+        height: 80vh;
+        padding-left: 6em;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-@keyframes go-back {
-    from {
-      transform: translateY(45px);
+
+        h1 {
+            margin: 0;
+            color: $third-color;
+            font-size: 90px;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: $second-color;
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        #botao {
+            position: relative;
+            border: solid 3px $third-color;
+            border-radius: 20px;
+            height: 4em;
+            width: 1.5em;
+            padding: 1em;
+            cursor: pointer;
+
+
+
+            img {
+                position: absolute;
+                height: 1.5em;
+
+                &:hover {
+                    -webkit-animation: go-back 1s infinite alternate;
+                    -moz-animation: go-back 1s infinite alternate;
+                    animation: go-back 1s infinite alternate;
+
+                }
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            
+        }
+
+
     }
-    to {
-      transform: translateY(0);
+
+    @keyframes go-back {
+        from {
+            transform: translateY(45px);
+        }
+
+        to {
+            transform: translateY(0);
+        }
     }
-  }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+
+    }
+
+}
