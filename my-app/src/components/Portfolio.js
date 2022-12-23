@@ -31,10 +31,10 @@ export default function Portfolio() {
             <div className="container par">
                 <div className="descricao">
                     <h2>Portfolio de Edição de vídeo</h2>
-                    <p>Criação de um jogo da velha para ser jogado entre duas pessoas.</p>
-                    <p>O Site foi feito com HTML5/CSS3 para criação e estilização da página e vanilla javascript para criar as regras do jogo. </p>
-                    <p>Na parte HTML5 Foi criada um h1 contendo o título, uma div com nove botões e um h2 sem texto, no CSS foi estilizado centralizando os elementos e colocando as cores e fonte corretas.</p>
-                    <p>No javascript criei as regras do jogo e a checagem de quem ganhou ou se houve empate. </p>
+                    <p>Criação do meu site de edição de vídeo.</p>
+                    <p>O Site foi feito completamente em React, para demonstração de futuros trabalhos de edição de vídeo. </p>
+                    <p>Uma página estática onde você navega atravé do menu ao lado. </p>
+                    <p>Eu utilizei React Hooks, React slick para o slider, e styled components para a estilização.</p>
                     <p>
                         <a href="https://caiqueedicao.web.app/" target="_blank">
                             Acesse aqui.
