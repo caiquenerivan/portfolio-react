@@ -12,10 +12,15 @@ export default function About() {
             <div id="about">
                 <h1>Sobre Mim</h1>
                 <div className="content">
-                    <p>
-                    Anim tempor consectetur et do nostrud nostrud. Lorem ad mollit mollit duis. Labore et adipisicing reprehenderit ea quis voluptate duis fugiat officia esse dolore labore. Eiusmod pariatur ullamco exercitation culpa ipsum aliquip proident occaecat magna eu aute occaecat exercitation.Anim tempor consectetur et do nostrud nostrud. Lorem ad mollit mollit duis. Labore et adipisicing reprehenderit ea quis voluptate duis fugiat officia esse dolore labore. Eiusmod pariatur ullamco exercitation culpa ipsum aliquip proident occaecat magna eu aute occaecat exercitation.
-                    </p>
-                    <img src={eu} alt="foto de caique nerivan"/>
+                    <div>
+                        <p>Olá, sou o Caique Nerivan. </p>
+                        <p>Formado em análise e desenvolvimento de sistemas pela Faculdade Impacta de Tecnologia, formação entre janeiro de 2015 e junho de 2017. </p>
+                        <p>Depois de formado, estudei na Saga, onde aprendi muito sobre design e outras habilidades.</p>
+                        <p>Hoje faço duas pós graduações, em Projetos de cloud computing e em projetos de aplicativos móveis multiplataformas. </p>
+                        <p>Além disso faço cursos em plataformas online, principalmente na Alura.</p>
+                        <p>Gosto de estar sempre aprendendo tecnologias novas, com foco maior em front-end, mas também tenho conhecimento em banco de dados, e em back-end, com java ou node.</p>
+                    </div>
+                    <img src={eu} alt="foto de caique nerivan" />
                 </div>
             </div>
 

@@ -2,8 +2,23 @@ import React from 'react';
 import '../style/skills.scss';
 import Carousel from './Carousel';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+
+import sass from '../imgs/sass.svg';
+import css from '../imgs/css.png';
+import html from '../imgs/html.png';
+import js from '../imgs/js.png';
+import ts from '../imgs/ts.png';
+import bootstrap from '../imgs/bootstrap.png';
+import react from '../imgs/react.png';
+import sc from '../imgs/sc.png';
+import node from '../imgs/nodejs.png';
+import java from '../imgs/java.png';
+import git from '../imgs/git.png';
+
+
 
 export default function Skills() {
 
@@ -15,21 +30,21 @@ export default function Skills() {
         slidesToScroll: 1,
         responsive: [
             {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                initialSlide: 1
-              }
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
             },
             {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-          ]
+        ]
     };
 
 
@@ -41,33 +56,69 @@ export default function Skills() {
                 <div className="carousel">
                     <Slider {...settings} className="slider">
                         <div className="item">
-                            <Carousel 
-                                title="title" 
-                                desc="Lorem culpa consequat officia sint dolore sint nulla exercitation. Magna pariatur laborum commodo in fugiat voluptate consequat culpa."
+                            <Carousel
+                                imagem={html}
+                                title="HTML5"
                             />
                         </div>
                         <div className="item">
-                            <Carousel 
-                                title="title" 
-                                desc="Lorem culpa consequat officia sint dolore sint nulla exercitation. Magna pariatur laborum commodo in fugiat voluptate consequat culpa."
+                            <Carousel
+                                imagem={css}
+                                title="CSS3"
                             />
                         </div>
                         <div className="item">
-                            <Carousel 
-                                title="title" 
-                                desc="Lorem culpa consequat officia sint dolore sint nulla exercitation. Magna pariatur laborum commodo in fugiat voluptate consequat culpa."
+                            <Carousel
+                                imagem={js}
+                                title="Javascript"
                             />
                         </div>
                         <div className="item">
-                            <Carousel 
-                                title="title" 
-                                desc="Lorem culpa consequat officia sint dolore sint nulla exercitation. Magna pariatur laborum commodo in fugiat voluptate consequat culpa."  
+                            <Carousel
+                                imagem={ts}
+                                title="Typescript"
                             />
                         </div>
                         <div className="item">
-                            <Carousel 
-                                title="title" 
-                                desc="Lorem culpa consequat officia sint dolore sint nulla exercitation. Magna pariatur laborum commodo in fugiat voluptate consequat culpa."
+                            <Carousel
+                                imagem={sass}
+                                title="SASS/SCSS"
+                            />
+                        </div>
+                        <div className="item">
+                            <Carousel
+                                imagem={bootstrap}
+                                title="Bootstrap"
+                            />
+                        </div>
+                        <div className="item">
+                            <Carousel
+                                imagem={react}
+                                title="ReactJS"
+                            />
+                        </div>
+                        <div className="item">
+                            <Carousel
+                                imagem={sc}
+                                title="Styled Components"
+                            />
+                        </div>
+                        <div className="item">
+                            <Carousel
+                                imagem={node}
+                                title="NodeJS"
+                            />
+                        </div>
+                        <div className="item">
+                            <Carousel
+                                imagem={java}
+                                title="Java"
+                            />
+                        </div>
+                        <div className="item">
+                            <Carousel
+                                imagem={git}
+                                title="Git"
                             />
                         </div>
                     </Slider>
