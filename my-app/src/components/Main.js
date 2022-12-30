@@ -35,11 +35,11 @@ export default function Main() {
 
                     <div className="menu">
                         <ul>
-                            <li><a href='#' alt='home'>Home</a></li>
-                            <li><a href='#' alt='skills'>Skills</a></li>
-                            <li><a href='#' alt='portfolio'>Portfolio</a></li>
-                            <li><a href='#' alt='sobre'>Sobre</a></li>
-                            <li><a href='#' alt="contato">Contato</a></li>
+                            <li><a href='#main'>Home</a></li>
+                            <li><a href='#skills'>Skills</a></li>
+                            <li><a href='#portfolio'>Portfolio</a></li>
+                            <li><a href='#about'>Sobre</a></li>
+                            <li><a href='#contato'>Contato</a></li>
                         </ul>
                     </div>
                     <div id="social-media">
@@ -77,7 +77,7 @@ export default function Main() {
                     </div>
                 </div>
             </div>
-            <div className="principal">
+            <div className="principal" id="main">
                 <h1>CAIQUE <br />NERIVAN</h1>
                 <h2>FRONT-END DEVELOPER</h2>
                 
